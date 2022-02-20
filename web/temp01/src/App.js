@@ -9,13 +9,21 @@ function App() {
                 <a className="box" href="https://yandex.ru/soft/win/startpage?from=prov_yaru">Сделать стартовой</a>
             </div>
             <div className="right">
-                <a className="di1"  href="https://passport.yandex.ru/passport?mode=passport"> Пользователь</a>
-                <a className="di2"  href="https://mail.yandex.ru/">Почта</a>
-                <a className="di3"  href="https://ya.ru/">Выход</a>
+                <a className="di di1"  href="https://passport.yandex.ru/passport?mode=passport"> Пользователь</a>
+                <a className="di di2"  href="https://mail.yandex.ru/">Почта</a>
+                <a className="di di3"  href="https://ya.ru/">Выход</a>
             </div>
         </div>
         <div className="mid">
-            <input className="search" placeholder="Искать здесь..." type="search"/>
+            <div className="str">
+                <input className="search" placeholder="Искать здесь..." type="search"/>
+                <button
+                    className="but" type="submit"><span
+                    className="but1">Найти</span>
+                </button>
+            </div>
+
+
 
         </div>
         <div className="bot">

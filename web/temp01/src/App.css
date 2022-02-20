@@ -23,28 +23,12 @@ div {
     justify-content: space-around;
     align-items: center;
 }
-.bot{
 
-}
-.left{
-
-}
-.right{
-
-}
 .box{
     text-decoration: none;
 }
-.di1{
-    border: 1px solid black;
-    text-decoration: none;
 
-}
-.di2{
-    text-decoration: none;
-    border: 1px solid black;
-}
-.di3{
+.di{
     text-decoration: none;
     border: 1px solid black;
 }
@@ -57,3 +41,22 @@ div {
     background: #fff url(//yastatic.net/s3/home-static/_/s/u/EmT7m7r1fLfN1qRy-imBYNufg.svg) no-repeat 0 0;
     overflow: hidden;
 }
+
+.str{
+    border: 1px white;
+    width: 300px;
+    position: relative;
+    display: flex;
+}
+.search{
+    width: 100%;
+    height: 42px;
+    padding-left: 10px;
+    border: 2px solid #7BA7AB;
+    border-radius: 5px;
+    outline: none;
+    background: #F9F0DA;
+    color: #9E9C9C;
+}
+
+
