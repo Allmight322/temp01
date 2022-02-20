@@ -1,53 +1,59 @@
-.body{
-    padding: 0;
-    margin: 0;
-    max-height: 740px;
-    max-width: 1532px;
 
+div {
+    border: 1px solid black;
 }
 .App{
-    border:2px solid black;
-    max-width: 1532px;
-    margin: 0 auto;
-    height:740px;
-    max-height: 740px;
-    display: inline-block;
-
-}
-
-
-.top{
-    background-color: blueviolet;
-    line-height:40px;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    display: inline-block;
-    width: 1532px;
-}
-.mid{
-    background-color: darkgrey;
-    line-height:680px;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    position: relative;
     left:0;
     top:0;
     right:0;
     bottom:0;
-    display: inline-block;
-    width: 1532px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+
+}
+.mid{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .bot{
-    background-color: darkturquoise;
-    line-height:20px;
-    font-size: 18px;
-    font-weight: 700;
-    text-align:center;
-    position:relative;
-    display: inline-block;
-    width: 1532px;
+
 }
+.left{
 
+}
+.right{
 
+}
+.box{
+    text-decoration: none;
+}
+.di1{
+    border: 1px solid black;
+    text-decoration: none;
+
+}
+.di2{
+    text-decoration: none;
+    border: 1px solid black;
+}
+.di3{
+    text-decoration: none;
+    border: 1px solid black;
+}
+.floot{
+    position: relative;
+    display: block;
+    height: 27px;
+    width: 60px;
+    margin: 0 auto 13px;
+    background: #fff url(//yastatic.net/s3/home-static/_/s/u/EmT7m7r1fLfN1qRy-imBYNufg.svg) no-repeat 0 0;
+    overflow: hidden;
+}
