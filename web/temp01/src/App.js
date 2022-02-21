@@ -5,7 +5,7 @@ import {useState} from "react";
 
 
 function App() {
-    document.querySelector('button').onclick = myClick;
+   /* document.querySelector('button').onclick = myClick;
     function myClick() {
 
         const x = document.querySelector(".i-1").value;
@@ -14,14 +14,10 @@ function App() {
         }
                 else{
             document.querySelector(".out").innerHTML = x;
-            }
-
-
-
-
-
-        }
-
+            }}
+            */
+    const [text, setText] = useState("Пока что пусто")
+    const [isShowError, setText2] =  useState(false)
 
     return (
         <div className="App">
@@ -36,10 +32,11 @@ function App() {
                 </div>
             </div>
             <div className="mid">
-                <div className="out">Пока пусто</div>
+                <div>{text}</div>
+                <div>{isShowError}</div>
                 <div className="str">
-                    <input className="i-1" type="text"/>
-                    <button>Push</button>
+                    <input type="text" onChange={(MY222)  => setText(MY222.target.value)}/>
+                    <button type="submit" id="submit" onClick ={() => isShowError &&(<div>Ошибка! пусто</div>) }>Push/></button>
                 </div>
 
 
@@ -52,7 +49,7 @@ function App() {
 
         </div>
 
-    );
+    )
 }
 
 export default App;
