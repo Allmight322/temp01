@@ -15,7 +15,7 @@ function App() {
              document.querySelector(".out").innerHTML = x;
              }}
              */
-    const [text, setText] = useState("Пока что пусто")
+    const [text, setText] = useState("")
     const [isShowError, setText2] =  useState(false)
 
     return (
@@ -32,10 +32,29 @@ function App() {
             </div>
             <div className="mid">
                 <div>{text}</div>
-                {isShowError &&<div>Ошибка</div>}
+                {isShowError&&<div>Ошибка</div>}
                 <div className="str">
-                    <input type="text" onChange={(MY222)  => setText(MY222.target.value)}/>
-                    <button type="submit" id="submit" onClick={(isShowError)=>setText2(true)}>Push</button>
+                    <input type="text"
+                           onChange={
+                               (MY222)  =>
+                                   setText(MY222.target.value)}
+                    />
+                    <button type="submit"
+                            id="submit"
+                            onClick={
+                                ()=> {
+                                    if  (setText != '')
+                                        setText2(false)
+                                    else
+                                        if (text==='')
+                                            setText2(true)
+                                    else
+                                        setText2(false)
+                                }
+                            }
+                    >
+                        Push
+                    </button>
                 </div>
 
 
