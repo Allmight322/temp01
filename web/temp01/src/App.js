@@ -5,17 +5,16 @@ import {useState} from "react";
 
 
 function App() {
-   /* document.querySelector('button').onclick = myClick;
-    function myClick() {
-
-        const x = document.querySelector(".i-1").value;
-        if(x==""){
-            document.querySelector(".out").innerHTML = 'вы ничего не ввели';
-        }
-                else{
-            document.querySelector(".out").innerHTML = x;
-            }}
-            */
+    /* document.querySelector('button').onclick = myClick;
+     function myClick() {
+         const x = document.querySelector(".i-1").value;
+         if(x==""){
+             document.querySelector(".out").innerHTML = 'вы ничего не ввели';
+         }
+                 else{
+             document.querySelector(".out").innerHTML = x;
+             }}
+             */
     const [text, setText] = useState("Пока что пусто")
     const [isShowError, setText2] =  useState(false)
 
@@ -33,10 +32,10 @@ function App() {
             </div>
             <div className="mid">
                 <div>{text}</div>
-                <div>{isShowError}</div>
+                {isShowError &&<div>Ошибка</div>}
                 <div className="str">
                     <input type="text" onChange={(MY222)  => setText(MY222.target.value)}/>
-                    <button type="submit" id="submit" onClick ={() => isShowError &&(<div>Ошибка! пусто</div>) }>Push/></button>
+                    <button type="submit" id="submit" onClick={(isShowError)=>setText2(true)}>Push</button>
                 </div>
 
 
