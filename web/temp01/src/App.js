@@ -37,16 +37,15 @@ function App() {
                     <input type="text"
                            onChange={
                                (MY222)  =>
-                                   setText(MY222.target.value)}
+                               {setText(MY222.target.value)
+                                   setText2(false)}}
                     />
                     <button type="submit"
                             id="submit"
                             onClick={
                                 ()=> {
-                                    if  (setText != '')
-                                        setText2(false)
-                                    else
-                                        if (text==='')
+
+                                    if (text==='')
                                             setText2(true)
                                     else
                                         setText2(false)
