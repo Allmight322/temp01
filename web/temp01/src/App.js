@@ -1,6 +1,7 @@
 import './App.css';
 import lupa from "./img/lupa.jpg"
 import {useState} from "react";
+import {Way} from "./Way";
 
 
 
@@ -22,12 +23,12 @@ function App() {
         <div className="App">
             <div className="top">
                 <div className="left">
-                    <a className="box" href="https://yandex.ru/soft/win/startpage?from=prov_yaru">Сделать стартовой</a>
+                    <a className="box" href="https://yandex.ru/soft/win/startpage?from=prov_yaru"> < Way мойАтрибут1="Сделать стартовой"/> </a>
                 </div>
                 <div className="right">
-                    <a className="di di1"  href="https://passport.yandex.ru/passport?mode=passport"> Пользователь</a>
-                    <a className="di di2"  href="https://mail.yandex.ru/">Почта</a>
-                    <a className="di di3"  href="https://ya.ru/">Выход</a>
+                    <a className="di di1"  href="https://passport.yandex.ru/passport?mode=passport"> < Way мойАтрибут1="Пользователь"/></a>
+                    <a className="di di2"  href="https://mail.yandex.ru/">< Way мойАтрибут1="Почта" /></a>
+                    <a className="di di3"  href="https://ya.ru/">< Way мойАтрибут1="Выход"/></a>
                 </div>
             </div>
             <div className="mid">
@@ -46,7 +47,7 @@ function App() {
                                 ()=> {
 
                                     if (text==='')
-                                            setText2(true)
+                                        setText2(true)
                                     else
                                         setText2(false)
                                 }
