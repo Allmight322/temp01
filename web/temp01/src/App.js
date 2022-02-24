@@ -23,12 +23,12 @@ function App() {
         <div className="App">
             <div className="top">
                 <div className="left">
-                    <a className="box" href="https://yandex.ru/soft/win/startpage?from=prov_yaru"> < Way мойАтрибут1="Сделать стартовой"/> </a>
+                    <Way adress="https://yandex.ru/soft/win/startpage?from=prov_yaru&banerid=" text='Сделать стартовой'/>
                 </div>
                 <div className="right">
-                    <a className="di di1"  href="https://passport.yandex.ru/passport?mode=passport"> < Way мойАтрибут1="Пользователь"/></a>
-                    <a className="di di2"  href="https://mail.yandex.ru/">< Way мойАтрибут1="Почта" /></a>
-                    <a className="di di3"  href="https://ya.ru/">< Way мойАтрибут1="Выход"/></a>
+                    <Way adress="https://passport.yandex.ru/auth/welcome?from=mail&origin=hostroot_homer_auth_L_ru&retpath=https%3A%2F%2Fmail.yandex.ru%2F&backpath=https%3A%2F%2Fmail.yandex.ru%3Fnoretpath%3D1" text="Пользователь" />
+                    <Way adress="https://yandex.ru/soft/win/startpage?from=prov_yaru" text="Меню" />
+                    <Way adress="https://yandex.ru/soft/win/startpage?from=prov_yaru" text="Еще" />
                 </div>
             </div>
             <div className="mid">

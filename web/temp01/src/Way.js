@@ -1,13 +1,12 @@
 import React from "react";
 
-export const Way = (props ) => {
+export const Way = (props) => {
+    const atrFirst = props.adress
+    const atrSecond = props.text
 
-    const атрибутПервый = props.мойАтрибут1
 
     return <div>
-        {атрибутПервый}
+        <a href={atrFirst}>{atrSecond}</a>
     </div>
-
-
 
 }
