@@ -11,9 +11,4 @@ export const Way = (props) => {
 
 }
 
-export  const Way1 = (props) => {
-    const poisk = props.search
-    return <div>
-         {poisk}
-    </div>
-}
+

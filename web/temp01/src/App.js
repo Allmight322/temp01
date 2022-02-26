@@ -1,8 +1,11 @@
 import './App.css';
 import lupa from "./img/lupa.jpg"
 import {useState} from "react";
-import {Way, Way1} from "./Way";
-
+import {Way} from "./components/Way";
+import {Search} from "./components/Search";
+import {El1} from "./components/El1";
+import {El2} from "./components/el2";
+import {El3} from "./components/el3";
 
 
 function App() {
@@ -33,13 +36,13 @@ function App() {
             <div className="mid">
 
                 <div className='poisk'>
-                    <Way1 search="введите текст"/>
+                    <Search search='введите текст'/>
                 </div>
                 <div className='vivod'>
                     <div className='vivod2'>
-                        <div>Элемент1</div>
-                        <div>Элемент2</div>
-                        <div>Элемент3</div>
+                        <El1 zag = 'статья первая' element1='рассказ про науку'/>
+                        <El2 zag = 'статья вторая 'element1='рассказ про спорт'/>
+                        <El3 zag = 'статья третья' element1='рассказ про искусство'/>
                     </div>
                 </div>
             </div>

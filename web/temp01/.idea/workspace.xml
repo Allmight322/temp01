@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0029f26e-cbff-48b9-bbe2-8d7ff55f6ed0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/El1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/el2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/el3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Way.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Way.js" afterDir="false" />
     </list>
@@ -67,7 +70,7 @@
       <workItem from="1645503824827" duration="934000" />
       <workItem from="1645518542773" duration="11737000" />
       <workItem from="1645700371940" duration="15112000" />
-      <workItem from="1645863505770" duration="5122000" />
+      <workItem from="1645863505770" duration="9053000" />
     </task>
     <task id="LOCAL-00001" summary="333">
       <created>1645177066757</created>
@@ -139,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645731357718</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="333">
+      <created>1645869057450</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1645869057450</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
