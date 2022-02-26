@@ -18,6 +18,21 @@ function App() {
              document.querySelector(".out").innerHTML = x;
              }}
              */
+    const searchResult =[
+        {id: 1,title: 'статья первая', description: 'рассказ про науку'},
+        {id: 2,title: 'статья вторая', description: 'рассказ про спорт'},
+        {id: 3,title: 'статья третья', description: 'рассказ про искусство'},
+    ]
+
+    for ( let i = 0; i < searchResult.length; i++) {
+    console.log(searchResult[i])}
+
+    searchResult.forEach(element => console.log(element))
+
+    const newResult = searchResult.map(element =>{
+        return element
+    })
+    console.log(newResult)
 
 
     return (
@@ -40,7 +55,7 @@ function App() {
                 <div className='vivod'>
                     <div className='vivod2'>
                         <El1 zag = 'статья первая' element1='рассказ про науку'/>
-                        <El1 zag = 'статья вторая 'element1='рассказ про спорт'/>
+                        <El1 zag = 'статья вторая2' element1='рассказ про спорт'/>
                         <El1 zag = 'статья третья' element1='рассказ про искусство'/>
                     </div>
                 </div>
