@@ -1,7 +1,7 @@
 import './App.css';
 import lupa from "./img/lupa.jpg"
 import {useState} from "react";
-import {Way} from "./Way";
+import {Way, Way1} from "./Way";
 
 
 
@@ -16,8 +16,7 @@ function App() {
              document.querySelector(".out").innerHTML = x;
              }}
              */
-    const [text, setText] = useState("")
-    const [isShowError, setText2] =  useState(false)
+
 
     return (
         <div className="App">
@@ -32,34 +31,22 @@ function App() {
                 </div>
             </div>
             <div className="mid">
-                <div>{text}</div>
-                {isShowError&&<div>Ошибка</div>}
-                <div className="str">
-                    <input type="text"
-                           onChange={
-                               (MY222)  =>
-                               {setText(MY222.target.value)
-                                   setText2(false)}}
-                    />
-                    <button type="submit"
-                            id="submit"
-                            onClick={
-                                ()=> {
 
-                                    if (text==='')
-                                        setText2(true)
-                                    else
-                                        setText2(false)
-                                }
-                            }
-                    >
-                        Push
-                    </button>
+                <div className='poisk'>
+                    <Way1 search="введите текст"/>
                 </div>
-
-
-
+                <div className='vivod'>
+                    <div className='vivod2'>
+                        <div>Элемент1</div>
+                        <div>Элемент2</div>
+                        <div>Элемент3</div>
+                    </div>
+                </div>
             </div>
+
+
+
+
             <div className="bot">
                 <a className="floot" href="https://ya.ru/"> </a>
             </div>
