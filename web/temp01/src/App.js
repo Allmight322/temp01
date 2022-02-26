@@ -4,8 +4,7 @@ import {useState} from "react";
 import {Way} from "./components/Way";
 import {Search} from "./components/Search";
 import {El1} from "./components/El1";
-import {El2} from "./components/el2";
-import {El3} from "./components/el3";
+
 
 
 function App() {
@@ -41,8 +40,8 @@ function App() {
                 <div className='vivod'>
                     <div className='vivod2'>
                         <El1 zag = 'статья первая' element1='рассказ про науку'/>
-                        <El2 zag = 'статья вторая 'element1='рассказ про спорт'/>
-                        <El3 zag = 'статья третья' element1='рассказ про искусство'/>
+                        <El1 zag = 'статья вторая 'element1='рассказ про спорт'/>
+                        <El1 zag = 'статья третья' element1='рассказ про искусство'/>
                     </div>
                 </div>
             </div>
