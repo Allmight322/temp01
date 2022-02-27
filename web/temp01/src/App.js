@@ -29,10 +29,6 @@ function App() {
 
     searchResult.forEach(element => console.log(element))
 
-    const newResult = searchResult.map(element =>{
-        return element
-    })
-    console.log(newResult)
 
 
     return (
@@ -54,16 +50,12 @@ function App() {
                 </div>
                 <div className='vivod'>
                     <div className='vivod2'>
-                        <El1 zag = 'статья первая' element1='рассказ про науку'/>
-                        <El1 zag = 'статья вторая2' element1='рассказ про спорт'/>
-                        <El1 zag = 'статья третья' element1='рассказ про искусство'/>
+                        {
+                            searchResult.map( e=> <El1 element1 = {e.title} zag = {e.description} />)
+                        }
                     </div>
                 </div>
             </div>
-
-
-
-
             <div className="bot">
                 <a className="floot" href="https://ya.ru/"> </a>
             </div>
