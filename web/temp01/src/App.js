@@ -47,6 +47,12 @@ function App() {
 
                 <div className='poisk'>
                     <Search search='введите текст'/>
+                    <button type='submit'
+                            id = 'sumbit'
+                            onClick={
+                                ()=> console.log('click')
+                            }>Push</button>
+
                 </div>
                 <div className='vivod'>
                     <div className='vivod2'>
