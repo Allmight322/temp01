@@ -1,23 +1,14 @@
 import './App.css';
-import lupa from "./img/lupa.jpg"
+import lupa from "./img/lupa.jpg";
 import {useState} from "react";
 import {Way} from "./components/Way";
-import {Search} from "./components/Search";
+import {Search} from "./Search";
 import {El1} from "./components/El1";
 
 
 
 function App() {
-    /* document.querySelector('button').onclick = myClick;
-     function myClick() {
-         const x = document.querySelector(".i-1").value;
-         if(x==""){
-             document.querySelector(".out").innerHTML = 'вы ничего не ввели';
-         }
-                 else{
-             document.querySelector(".out").innerHTML = x;
-             }}
-             */
+
     const searchResult =[
         {id: 1,title: 'статья первая', description: 'рассказ про науку'},
         {id: 2,title: 'статья вторая', description: 'рассказ про спорт'},
@@ -30,8 +21,14 @@ function App() {
     searchResult.forEach(element => console.log(element))
 
 
+    const onclick = () => {
+        console.log('click')
 
-    return (
+    }
+
+
+    return(
+
         <div className="App">
             <div className="top">
                 <div className="left">
@@ -47,11 +44,7 @@ function App() {
 
                 <div className='poisk'>
                     <Search search='введите текст'/>
-                    <button type='submit'
-                            id = 'sumbit'
-                            onClick={
-                                ()=> console.log('click')
-                            }>Push</button>
+
 
                 </div>
                 <div className='vivod'>
