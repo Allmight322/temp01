@@ -9,6 +9,8 @@ import {El1} from "./components/El1";
 
 function App() {
 
+
+
     const searchResult =[
         {id: 1,title: 'статья первая', description: 'рассказ про науку'},
         {id: 2,title: 'статья вторая', description: 'рассказ про спорт'},
@@ -20,11 +22,7 @@ function App() {
 
     searchResult.forEach(element => console.log(element))
 
-
-    const onclick = () => {
-        console.log('click')
-
-    }
+    const [hour, Sethour] = useState([])
 
 
     return(
@@ -43,7 +41,9 @@ function App() {
             <div className="mid">
 
                 <div className='poisk'>
-                    <Search search='введите текст'/>
+                    <Search search='введите текст' f ={onclick =
+                        ()=> {Sethour({searchResult})}}  />
+
 
 
                 </div>

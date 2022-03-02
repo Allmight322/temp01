@@ -1,7 +1,10 @@
+import {useState} from "react";
 
-import {onclick} from './App'
+
 export  const Search = (props) => {
     const poisk = props.search
+    const f = props.f
+    const [lake, lake2] = useState()
 
     return <div><input type='text' value={poisk}>
     </input>
@@ -9,8 +12,12 @@ export  const Search = (props) => {
     <button type='submit'
         id = 'sumbit'
         onClick={
-        ()=> {onclick}
-    }>Push</button>
+        ()=> f()
+    }
+        onChange={
+            ()=> lake2()
+        }
+    >Push</button>
 
     </div>
 
