@@ -41,8 +41,8 @@ function App() {
             <div className="mid">
 
                 <div className='poisk'>
-                    <Search search='введите текст' f ={onclick =
-                        ()=> {Sethour({searchResult})}}  />
+                    <Search search='введите текст' f ={
+                        ()=> Sethour(searchResult)} />
 
 
 
@@ -50,7 +50,7 @@ function App() {
                 <div className='vivod'>
                     <div className='vivod2'>
                         {
-                            searchResult.map( e=> <El1 element1 = {e.title} zag = {e.description} />)
+                            hour.map( e=> <El1 element1 = {e.title} zag = {e.description} />)
                         }
                     </div>
                 </div>
