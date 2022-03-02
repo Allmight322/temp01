@@ -6,7 +6,8 @@ export  const Search = (props) => {
     const f = props.f
 
 
-    return <div><input type='text' value={poisk}>
+    return <div>
+        <input type='text' value={poisk}>
     </input>
 
     <button type='submit'
