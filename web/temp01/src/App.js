@@ -50,7 +50,7 @@ function App() {
                 <div className='vivod'>
                     <div className='vivod2'>
                         {
-                            hour.map( e=> <El1 element1 = {e.title} zag = {e.description} />)
+                            hour.map( e=> <El1 key ={e.title}  element1 = {e.title}  zag = {e.description} />)
                         }
                     </div>
                 </div>
