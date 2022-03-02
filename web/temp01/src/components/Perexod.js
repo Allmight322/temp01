@@ -1,7 +1,7 @@
 import React from "react";
 
-export const Way = (props) => {
-    const atrFirst = props.adress
+export const Perexod = (props) => {
+    const atrFirst = props.address
     const atrSecond = props.text
 
 

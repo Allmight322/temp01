@@ -1,4 +1,4 @@
-export  const El1 = (props) => {
+export  const Rezult = (props) => {
     const element = props.element1
     const zag = props.zag
 
