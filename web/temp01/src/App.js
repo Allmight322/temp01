@@ -14,6 +14,8 @@ function App() {
         {id: 3,title: 'статья третья', description: 'рассказ про искусство'},
     ]
 
+    const rename = ()=> setHour(searchResult)
+
     const [hour, setHour] = useState([])
 
     return(<div
@@ -31,8 +33,8 @@ function App() {
             <div className="mid">
 
                 <div className='poisk'>
-                    <Search search='введите текст' f ={
-                        ()=> setHour(searchResult)} />
+                    <Search search='введите текст' event = {rename}
+                    />
                 </div>
 
                 <div className='vivod'>

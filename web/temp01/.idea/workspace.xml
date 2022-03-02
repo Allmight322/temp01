@@ -4,9 +4,7 @@
     <list default="true" id="0029f26e-cbff-48b9-bbe2-8d7ff55f6ed0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/El1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rezult.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Way.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Perexod.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +78,7 @@
       <workItem from="1646136487125" duration="7941000" />
       <workItem from="1646149001597" duration="13229000" />
       <workItem from="1646225560553" duration="1347000" />
+      <workItem from="1646244355230" duration="1392000" />
     </task>
     <task id="LOCAL-00001" summary="333">
       <created>1645177066757</created>

@@ -3,7 +3,7 @@ import {useState} from "react";
 
 export  const Search = (props) => {
     const poisk = props.search
-    const f = props.f
+    const event = props.event
 
 
     return <div>
@@ -13,7 +13,7 @@ export  const Search = (props) => {
     <button type='submit'
         id = 'sumbit'
         onClick={
-        ()=> f()
+        ()=> event()
     }
     >Push</button>
 
