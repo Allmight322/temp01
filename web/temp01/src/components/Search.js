@@ -7,7 +7,8 @@ export  const Search = (props) => {
    const  [pour, setPour] = useState([])
 
     const textHandler = () => {
-        setPour = event.target.value
+        setPour(event.target.value)
+
     }
 
 
@@ -21,10 +22,13 @@ export  const Search = (props) => {
     <button type='submit'
         id = 'sumbit'
         onClick={
-             ()=> event()
+             ()=> (
+                 event())
+             (
+                 console.log({pour})
+             )
 
-    }
-
+        }
 
     >Push</button>
 
