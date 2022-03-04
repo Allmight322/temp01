@@ -14,9 +14,20 @@ function App() {
         {id: 3,title: 'статья третья', description: 'рассказ про искусство'},
     ]
 
-    const rename = ()=> setHour(searchResult)
+
+    
 
     const [hour, setHour] = useState([])
+
+
+
+
+     const zapros = () =>
+             fetch( "http://alwertus.zapto.org:9010",{ method:'GET'})
+            .then(rs => rs.json())
+             .then(rs => setHour(rs))
+
+
 
     return(<div
             className="App">
@@ -33,7 +44,7 @@ function App() {
             <div className="mid">
 
                 <div className='poisk'>
-                    <Search search='введите текст' event = {rename}
+                    <Search search='введите текст' event = {zapros}
                     />
                 </div>
 
