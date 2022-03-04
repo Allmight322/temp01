@@ -4,20 +4,27 @@ import {useState} from "react";
 export  const Search = (props) => {
     const poisk = props.search
     const event = props.event
-    const textHandler = (event) => {
-        console.log(event.target.value)
+   const  [pour, setPour] = useState([])
+
+    const textHandler = () => {
+        setPour = event.target.value
     }
 
 
+
     return <div>
-        <input type='text' onClick = {textHandler}>
-    </input>
+        <input type='text' onChange={textHandler}>
+        </input>
+
+
 
     <button type='submit'
         id = 'sumbit'
         onClick={
-        ()=> event()
+             ()=> event()
+
     }
+
 
     >Push</button>
 
