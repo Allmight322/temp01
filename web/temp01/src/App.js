@@ -24,8 +24,14 @@ function App() {
 
      const zapros = () =>
              fetch( "http://alwertus.zapto.org:9010",{ method:'GET'})
-            .then(rs => rs.json())
+             .then(rs => rs.json())
              .then(rs => setHour(rs))
+              .catch(e => console.log("текст ошибки", e))
+
+
+
+
+
 
 
 
