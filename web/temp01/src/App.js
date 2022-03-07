@@ -22,11 +22,17 @@ function App() {
 
 
 
-     const zapros = () =>
+         const zapros = () =>
              fetch( "http://alwertus.zapto.org:9010",{ method:'GET'})
              .then(rs => rs.json())
              .then(rs => setHour(rs))
               .catch(e => console.log("текст ошибки", e))
+
+    const zaprosWith = () =>
+        fetch("http://alwertus.zapto.org:9010", {
+            method:'POST', body: JSON.stringify({findText: 'А'})
+        })
+
 
 
 
@@ -50,7 +56,7 @@ function App() {
             <div className="mid">
 
                 <div className='poisk'>
-                    <Search search='введите текст' event = {zapros}
+                    <Search search='введите текст' event = {zaprosWith}
                     />
                 </div>
 
