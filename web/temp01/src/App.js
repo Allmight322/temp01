@@ -23,15 +23,18 @@ function App() {
              .then(rs => setHour(rs))
               .catch(e => console.log("текст ошибки", e)) */
 
-    const zaprosWith = () =>
+    const zaprosWith = () => {
+        const tmp = {findText: pour}
+        console.log(tmp)
         fetch("http://alwertus.zapto.org:9010", {
-            method:'POST',
+            method: 'POST',
             headers: {"Content-Type": "application/json"},
-            body: JSON.stringify({findText: pour})
+            body: JSON.stringify({tmp})
         })
             .then(rs => rs.json())
             .then(rs => setPour(rs))
             .catch(e => console.log("текст ошибки", e))
+    }
 
     return(<div
             className="App">
