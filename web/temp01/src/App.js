@@ -30,7 +30,8 @@ function App() {
             body: JSON.stringify({findText: pour})
         })
             .then(rs => rs.json())
-            .then(rs => setHour(rs))
+            .then(rs => setPour(rs))
+            .catch(e => console.log("текст ошибки", e))
 
     return(<div
             className="App">
