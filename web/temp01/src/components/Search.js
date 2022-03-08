@@ -4,14 +4,12 @@ import {useState} from "react";
 export  const Search = (props) => {
     const poisk = props.search
     const event = props.event
-    const pour1 = props.went
-    const setPour1 = props.gone
-    const [inputText, setInputText] = useState([])
+    const end = props.pour1
+    const begin = props.setPour1
 
-    const textHandler = (zxc) => {
+   const textHandler = (zxc) => {
         setInputText(zxc.target.value)
-
-    }
+   }
 
 
     return <div>
@@ -23,7 +21,7 @@ export  const Search = (props) => {
         onClick={
              ()=> {
                  event()
-                 console.log(inputText)
+                 console.log(end)
              }
 
         }

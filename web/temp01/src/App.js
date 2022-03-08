@@ -15,6 +15,7 @@ function App() {
 
 
     const  [resultArray, setResultArray] = useState([])
+    const [inputText, setInputText] = useState('')
 
 
 
@@ -25,7 +26,7 @@ function App() {
               .catch(e => console.log("текст ошибки", e)) */
 
     const zaprosWith = () => {
-        const tmp = {findText: 'А'}
+        const tmp = {findText: inputText }
         console.log(tmp)
         fetch("http://alwertus.zapto.org:9010", {
             method: 'POST',
@@ -52,7 +53,7 @@ function App() {
             <div className="mid">
 
                 <div className='poisk'>
-                    <Search search='введите текст' event ={zaprosWith}
+                    <Search search='введите текст' event ={zaprosWith} pour1 = {inputText} setPour1 ={setInputText}
                     />
                 </div>
 
