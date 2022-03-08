@@ -5,7 +5,6 @@ import {Search} from "./components/Search";
 import {Rezult} from "./components/Rezult";
 
 
-
 function App() {
 
     const searchResult =[
@@ -14,12 +13,8 @@ function App() {
         {id: 3,title: 'статья третья', description: 'рассказ про искусство'},
     ]
 
-
-    
-
     const [hour, setHour] = useState([])
-
-
+    const  [pour, setPour] = useState([])
 
 
         /*  const zapros = () =>
@@ -32,27 +27,10 @@ function App() {
         fetch("http://alwertus.zapto.org:9010", {
             method:'POST',
             headers: {"Content-Type": "application/json"},
-            body: JSON.stringify({findText: 'А'})
+            body: JSON.stringify({findText: pour})
         })
             .then(rs => rs.json())
             .then(rs => setHour(rs))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     return(<div
             className="App">
@@ -69,7 +47,7 @@ function App() {
             <div className="mid">
 
                 <div className='poisk'>
-                    <Search search='введите текст' event = {zaprosWith}
+                    <Search pour1 = {pour} setPour1 = {setPour} event ={zaprosWith}
                     />
                 </div>
 
