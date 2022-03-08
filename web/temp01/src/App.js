@@ -13,8 +13,9 @@ function App() {
         {id: 3,title: 'статья третья', description: 'рассказ про искусство'},
     ]
 
-    const [hour, setHour] = useState([])
-    const  [pour, setPour] = useState([])
+
+    const  [resultArray, setResultArray] = useState([])
+
 
 
         /*  const zapros = () =>
@@ -24,15 +25,15 @@ function App() {
               .catch(e => console.log("текст ошибки", e)) */
 
     const zaprosWith = () => {
-        const tmp = {findText: pour}
+        const tmp = {findText: 'А'}
         console.log(tmp)
         fetch("http://alwertus.zapto.org:9010", {
             method: 'POST',
             headers: {"Content-Type": "application/json"},
-            body: JSON.stringify({tmp})
+            body: JSON.stringify(tmp)
         })
             .then(rs => rs.json())
-            .then(rs => setPour(rs))
+            .then(rs => setResultArray(rs))
             .catch(e => console.log("текст ошибки", e))
     }
 
@@ -51,14 +52,14 @@ function App() {
             <div className="mid">
 
                 <div className='poisk'>
-                    <Search pour1 = {pour} setPour1 = {setPour} event ={zaprosWith}
+                    <Search search='введите текст' event ={zaprosWith}
                     />
                 </div>
 
                 <div className='vivod'>
                     <div className='vivod2'>
                         {
-                            hour.map( e=> <Rezult key ={e.title}  element1 = {e.title}  zag = {e.description} />)
+                            resultArray.map( e=> <Rezult key ={e.title}  element1 = {e.title}  zag = {e.description} />)
                         }
                     </div>
                 </div>
