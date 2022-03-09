@@ -9,9 +9,17 @@ function App2() {
     const handler=(zxc)=>{
         setInputText(zxc.target.value)
     }
+
     const foot=()=>{
-        setResult(inputText)
+
+        if(inputText==='')
+            setResult('')
+        else
+            setResult(inputText[0]+inputText[inputText.length-1])
+
     }
+
+
 
     return <div className='App2'>
         <div className='input'>
@@ -20,7 +28,7 @@ function App2() {
                 PUSH
             </button>
         </div>
-        <textarea className='area' defaultValue={result}/>
+        <textarea className='area' value={result} onChange = {() => {}}/>
     </div>
 }
 export default App2
