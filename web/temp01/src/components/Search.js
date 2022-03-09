@@ -8,7 +8,7 @@ export  const Search = (props) => {
     const begin = props.setPour1
 
    const textHandler = (zxc) => {
-        setInputText(zxc.target.value)
+        begin(zxc.target.value)
    }
 
 
