@@ -3,8 +3,8 @@ import {useState} from "react";
 
 function App2() {
 
-    const [inputText, setInputText] = useState('')
-    const [result, setResult] = useState('')
+    const [inputText, setInputText]=useState('')
+    const [result, setResult]=useState('')
 
     const handler=(zxc)=>{
         setInputText(zxc.target.value)
