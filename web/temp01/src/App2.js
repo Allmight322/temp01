@@ -11,13 +11,17 @@ function App2() {
     }
 
     const foot=()=>{
+        let hook = '';
+        for (let count =1; count<inputText.length; count+=2){
+            hook+=inputText[count]
 
-        if(inputText==='')
-            setResult('')
+        }
+        if (inputText.length>1)
+            setResult(hook)
         else
-            setResult(inputText[0]+inputText[inputText.length-1])
+            setResult(inputText)
 
-    }
+        }
 
 
 
