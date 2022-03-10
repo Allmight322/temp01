@@ -11,7 +11,13 @@ function App2() {
     }
 
     const foot=()=>{
-        setResult(inputText.split(' ').map(function(item){return item[0]}).join(''))
+        console.log(inputText.split(' '))
+         let a = inputText.split(' ')
+         let b = a.reverse()
+        setResult(b.join(' '))
+
+
+
         }
 
 
