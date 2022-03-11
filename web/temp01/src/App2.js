@@ -10,22 +10,31 @@ function App2() {
         setInputText(zxc.target.value)
     }
 
-    const foot=()=>{
-        console.log(inputText.split(' '))
-         let a = inputText.split(' ')
-         let b = a.reverse()
-        setResult(b.join(' '))
+    /*const foot=()=> {
 
+    }*/
 
-
+    function checking() {
+        try {
+            JSON.parse(inputText);
+        } catch (e) {
+            return setResult('')
         }
+        return setResult(inputText)
+    }
+
+
+
+
+
+
 
 
 
     return <div className='App2'>
         <div className='input'>
             <input type='text' onChange={handler}/>
-            <button type='submit' onClick={foot}>
+            <button type='submit' onClick={checking}>
                 PUSH
             </button>
         </div>
