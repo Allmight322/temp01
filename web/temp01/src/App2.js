@@ -15,12 +15,16 @@ function App2() {
     }*/
 
     function checking() {
+        let kick = JSON.parse(inputText)
+        let b = (kick[0].name + ' ' + kick[1].name + ' ' + kick[2].name)
+
+
         try {
             JSON.parse(inputText);
         } catch (e) {
             return setResult('')
         }
-        return setResult(inputText)
+        return setResult(b)
     }
 
 
