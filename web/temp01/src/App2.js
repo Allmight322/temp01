@@ -19,8 +19,11 @@ function App2() {
         let kick = JSON.parse(inputText)
         let beer = ''
 
-        for (let i = 0; i < kick.length;i++)
-           beer += kick[i].name + ' '
+
+        for (let i = 0; i < kick.length;i++){
+            if(!('name' in  kick)) {continue}
+            beer += kick[i].name + ' '}
+
 
         try {
             JSON.parse(inputText);
@@ -29,6 +32,8 @@ function App2() {
         }
           return setResult(beer)
     }
+
+
 
 
 
