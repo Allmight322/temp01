@@ -21,7 +21,7 @@ function App2() {
 
 
         for (let i = 0; i < kick.length;i++){
-            if(!('name' in  kick)) {continue}
+            if(!('name' in  kick[i])) {continue}
             beer += kick[i].name + ' '}
 
 
