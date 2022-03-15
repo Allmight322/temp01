@@ -15,22 +15,17 @@ function App2() {
     }*/
 
     function checking() {
-
-        let kick = JSON.parse(inputText)
-        let beer = ''
-
-
-        for (let i = 0; i < kick.length;i++){
-            if(!('name' in  kick[i])) {continue}
-            beer += kick[i].name + ' '}
-
-
         try {
             JSON.parse(inputText);
         } catch (e) {
-            return setResult('')
+             setResult('')
         }
-          return setResult(beer)
+            let kick = JSON.parse(inputText)
+            let beer = ''
+            for (let i = 0; i < kick.length;i++){
+                if(!('name' in  kick[i])) {continue}
+                beer += kick[i].name +'\n'}
+            setResult(beer)
     }
 
 
