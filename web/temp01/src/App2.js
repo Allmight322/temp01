@@ -21,15 +21,19 @@ function App2() {
             JSON.parse(inputText)
             kick = JSON.parse(inputText)
             beer = ''
-            for (let i = 0; i < kick.length;i++){
-                if(!('name' in  kick[i])) {continue}
-                beer += kick[i].name +'\n'}
-        }
-        catch (e) {
+            for (let i = 0; i < kick.length; i++) {
+                if (!('name' in kick[i])) {
+                    continue
+                }
+                beer += kick[i].name + '\n'
+            }
+            setResult(beer)
+
+        } catch (e) {
             setResult('ошибка')
 
         }
-            setResult(beer)
+
     }
 
 
