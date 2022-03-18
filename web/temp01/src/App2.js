@@ -16,25 +16,24 @@ function App2() {
 
     function checking() {
         let kick
-        let beer
-        try {
-            JSON.parse(inputText)
-            kick = JSON.parse(inputText)
-            beer = ''
-            for (let i = 0; i < kick.length; i++) {
-                if (!('name' in kick[i])) {
-                    continue
-                }
-                beer += kick[i].name + '\n'
-            }
-            setResult(beer)
+        let beer = []
 
+        try {
+            kick = JSON.parse(inputText)
+            kick.forEach((e) => {           /* beer = kick.map(e => {      beer = kick.filter(e=> e.id <= 2)
+                                            return e.name                  setResult(beer)
+                                            setResult(beer)*/
+                beer.push(e.name+'\n')
+
+            setResult(beer.join(''))
+            })
         } catch (e) {
             setResult('ошибка')
 
         }
 
     }
+
 
 
 
