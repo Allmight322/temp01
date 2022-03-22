@@ -20,17 +20,18 @@ function App2() {
 
         try {
             kick = JSON.parse(inputText)
-            kick.forEach((e) => {           /* beer = kick.map(e => {      beer = kick.filter(e=> e.id <= 2)
-                                            return e.name                  setResult(beer)
-                                            setResult(beer)*/
-                beer.push(e.name+'\n')
+            beer = kick.map((e, index) =>{
+                return   (index+1)+'.' + e.name
 
-            setResult(beer.join(''))
+
             })
+            setResult(beer.join('\n'))
+
         } catch (e) {
             setResult('ошибка')
 
         }
+
 
     }
 
